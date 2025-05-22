@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جاودان گيمز </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #0f0f13;
+            color: #fff;
+        }
+        
+        .hero-section {
+            background: url('https://preview.redd.it/gaming-wallpapers-3840-x-2160-uhd-v0-fr4m7cy20whd1.jpg?width=1080&crop=smart&auto=webp&s=97c6b3f7c1861af7235d329ed3d3676920d32a85');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .game-card {
+            background: linear-gradient(135deg, rgba(23, 23, 30, 0.8) 0%, rgba(43, 15, 56, 0.8) 100%);
+            border: 1px solid #c793bc;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(90, 25, 120, 0.1);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(90, 25, 120, 0.3);
+            border-color: #6a2b8a;
+        }
+        
+        .download-btn {
+            background: linear-gradient(90deg, #8a2be2 0%, #6a0dad 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(90deg, #6a0dad 0%, #8a2be2 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-80 backdrop-blur-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-purple-600 rounded-md flex items-center justify-center">
+                            <i class="fas fa-gamepad text-white text-xl"></i>
+                        </div>
+                        <span class="text-white mr-3 text-xl font-bold">Javdan Games</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4 space-x-reverse">
+                    <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-900">خانه</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-900">بازی ها</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-900">درباره ما</a>
+                    <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-900">تماس با ما</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center pt-16">
+        <div class="text-center px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                <span class="text-purple-200">به اپلیکیشن جاودان گيمز خوش آمدید</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                جایی که تخیلات به واقعیت تبدیل می‌شود. با برنامه ‌های جذاب و زیبا.
+            </p>
+            <div class="mt-12 scroll-indicator">
+                <i class="fas fa-angle-double-down text-purple-400 text-4xl animate-pulse"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-purple-400">بازی‌های ما</h2>
+        
+        <div class="grid gap-10">
+            <!-- Game 1 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://myket.ir/app-icon/8414fb45-2fab-4047-9da1-1d0c589be6d7.png" 
+                         alt="جنگ شاهان" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">اطلاعات اسلامی</h3>
+                    <p class="text-gray-300 mb-4">
+                        ‏‏برنامه اطلاعات اسلامی حاوی ۵٠ مرحله میباشد که شامل سوالات دینی درباره امام زمان، پیامبران، امامان و غیره است.
+                        ‏‏در این برنامه از شما سوالاتی پرسیده خواهد شد که شما باید به آنها جواب بدهید تا به مرحله بعدی راه پیدا کنید،
+                        ‏‏سوالات سطح معمولی هستند و سخت و آسان نیستند
+                        ‏‏امیدواریم از این برنامه خوشتان بیاید❤
+                    </p>
+                    <a href="https://myket.ir/app/com.app.myapp.xpwXGxHVMn" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 2 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://s.cafebazaar.ir/images/upload/icons/air.appWanderingBall-20c2b21d-efab-4d11-849d-f81051398e67.png" 
+                         alt="ماجراجویی کوهستان" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">توپ سرگردان</h3>
+                    <p class="text-gray-300 mb-4">
+                        توپ سرگردان یک بازی استراتژی است که شما در واقع یک توپ قرمز هستید که باید از موانع پیش رو عبور کنید و به بالا بروید و به قله برسید و مرحله را تمام کنید. 
+
+                        موانع پیش رو عبارتند از تپه ها و توپ های بزرگ متحرک که شما باید با موفقیت از آنان عبور کنید و به نقطه پایان برسید.
+                        
+                        امید است که از بازی لذت برده باشید
+                    </p>
+                    <a href="https://cafebazaar.ir/app/air.appWanderingBall" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 3 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://s.cafebazaar.ir/images/icons/air.Asle-89ab765f-7932-4bea-b580-dff066c94591_512x512.png?x-img=v1/format,type_webp,lossless_false/resize,h_256,w_256,lossless_false/optimize" 
+                         alt="مسابقات اتومبیل‌رانی" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">اصله</h3>
+                    <p class="text-gray-300 mb-4">
+                        بازی اصله یک بازی سبک استراتژی است که شما باید از صخره ها و سنگ ها بالا برید و به خط پایان برسید. سرعت در این بازی ملاک است.. 
+                    </p>
+                    <a href="https://cafebazaar.ir/app/air.Asle" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 4 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://parspng.com/wp-content/uploads/2022/09/quranpng.parspng.com-6-300x300.png" 
+                         alt="پازل اسرارآمیز" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">قرآن تنزیل</h3>
+                    <p class="text-gray-300 mb-4">
+به زودی منتشر میشود...
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 5 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="مزرعه شاد" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">به زودی....</h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 6 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="تیرانداز حرفه‌ای" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">به زودی....</h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 7 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="بازی کلمات" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">به زودی...</h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 8 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="قاتل زامبی‌ها" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">به زودی....</h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 9 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="سفر به فضا" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300"> به زودی... </h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Game 10 -->
+            <div class="game-card rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/300x300/6b21a8/ffffff?text=Javdan+Game" 
+                         alt="معمای موزه" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3 text-purple-300">به زودی....</h3>
+                    <p class="text-gray-300 mb-4">
+
+                    </p>
+                    <a href="#" class="download-btn text-white font-semibold py-2 px-6 rounded-full inline-block text-center mt-2">
+                        <i class="fas fa-download ml-2"></i> دانلود
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-90 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-purple-400 font-bold text-lg mb-4">Javdan Games</h3>
+                    <p class="text-gray-400">ما در جاودان گيمز باور داریم که بازی‌ها می‌توانند زندگی را زیباتر کنند.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">لینک‌های سریع</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400">خانه</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400">بازی‌های ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400">درباره ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">تماس با ما</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope ml-2"></i>1mohamdjavad1388@gmail.com</li>
+                        <li><i class="fas fa-phone ml-2"></i> 1749 412 0915 98+</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">شبکه‌های اجتماعی</h4>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="https://t.me/javdanfard" class="text-gray-400 hover:text-blue-400"><i class="fab fa-telegram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="https://instagram/mo_javdanfard" class="text-gray-400 hover:text-purple-500"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500"><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2025 Javdan Games. تمام حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation for game cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const gameCards = document.querySelectorAll('.game-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {threshold: 0.1});
+            
+            gameCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
